@@ -1,0 +1,2 @@
+#!/bin/bas
+readarray -t words && (for word in "${words[@]}"
