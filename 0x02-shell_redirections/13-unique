@@ -1,2 +1,2 @@
 #!/bin/bas
-readarray -t words && (for word in "${words[@]}"
+readarray -t words && for word in "${words[@]}"; do ((word_count["$word"]++)); done && for word in "${words[@]}"; do if [ "${word_count["$word"]}" -eq 1 ]; then echo "$word"; fi; done | sort
