@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | uniq -c | grep -E '^[[:space:]]*1 ' | sed -E 's/^[[:space:]]*[0-9]+ //g' | sort
+sort | uniq -u
