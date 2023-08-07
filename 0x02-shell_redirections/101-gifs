@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -exec basename -s .gif {} \ | sort -f
+for file in *.gif; do echo "${file%.*}"; done | sort -f
