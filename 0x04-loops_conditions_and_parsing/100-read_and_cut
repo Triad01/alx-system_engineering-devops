@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Displays the content of the /etc/passed file
+
+# Set the input file
+input_file="/etc/passwd"
+
+# Read the file line by line using a while loop
+while IFS=: read -r username _ uid _ home; do
+    # Display the required information
+    echo "$username:$uid:$home"
+done < "$input_file"
