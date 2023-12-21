@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#script displays the content of the file /etc/passwd, using the while loop + IFS.
 # Set the input file
 input_file="/etc/passwd"
 
