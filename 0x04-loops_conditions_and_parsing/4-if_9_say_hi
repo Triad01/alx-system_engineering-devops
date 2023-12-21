@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#This script prints "Best School" 10 times but "hi" on the nineth
+count=1
+while [ $count -lt 10 ]
+do
+	if [ $count -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	echo "Best School"
+	((count++))
+done
