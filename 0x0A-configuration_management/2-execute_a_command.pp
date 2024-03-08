@@ -1,7 +1,8 @@
-# Puppet file executes a command
+# Manifest that kills a process named killmenow
+
 exec { 'pkill killmenow':
-    path    => '/usr/bin',
-    command => 'pkill killmenow',
-    provider=> 'shell',
-    returns => [0, 1]
+  path     => '/usr/bin',
+  command  => 'pkill killmenow',
+  provider => shell,
+  returns  => [0, 1]
 }
