@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# scripts automatically logs me into my server
+
+ssh -i ~/.ssh/school ubuntu@34.232.69.133
