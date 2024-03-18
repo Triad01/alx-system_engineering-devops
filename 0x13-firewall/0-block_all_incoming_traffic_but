@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# script to block all incomming traffic on server
+# except on port t222, 443 and 80
+
+#setting up default policy to deny all incomming traffic
+sudo ufw default deny incoming
+
+#setting up default policy to allow all outgoing traffic
+sudo ufw default allow outgoing
+
+#allow ssh connections on port 22
+sudo ufw allow 22
+
+#allow ssh connections on port 80 (unencrypted)
+sudo ufw allow 80
+
+#allow shh connections on port 443 (encrypted)
+sudo ufw allow 443
+
+#verify allowd traffic
+sudo ufw show added
+
+#Enable ufw
+sudo ufw enable
