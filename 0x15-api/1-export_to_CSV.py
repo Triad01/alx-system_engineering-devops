@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ Export api to csv"""
 import csv
-import pandas
 import requests
 import sys
 
